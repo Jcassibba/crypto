@@ -1,1 +1,1 @@
-web:bundle exec python app.py -p $PORT
+web: python app:crypto_scrubber
