@@ -1,1 +1,1 @@
-web: python app:crypto_scrubber.py
+web: python app:app.py
