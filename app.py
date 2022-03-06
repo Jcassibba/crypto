@@ -14,7 +14,8 @@ def ready():
     #print("bot is ready")
     ##main code file##
     crypto = main()
-    return crypto.run()  
+    #return 
+    crypto.run()  
 
 if (__name__ == "__main__"):
     app.run()
