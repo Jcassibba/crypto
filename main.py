@@ -6,8 +6,10 @@ import time
 from datetime import *
 
 
-x=1
-while(x==1):
+
+#while(x==1): #have loop run once every 60 mins
+for j in range (1000):
+  
   crypto = open("crypto.json", "a")
   now = datetime.now()
         
@@ -36,11 +38,13 @@ while(x==1):
   for coin in data: 
     d = str(coin)
     n = str(now)
+    ###### write to database
     crypto.write(n)
     crypto.write(d)
     crypto.write("\n")
     print(coin)
     print('')
+    time.sleep(10)
   crypto.close()
-  x=1
+  #x=1
 #################################
