@@ -44,6 +44,6 @@ for j in range (1000):
       print(coin)
       print('')
     crypto.close()
-  time.sleep(10)
+  time.sleep(3600)
   x=1
 #################################
