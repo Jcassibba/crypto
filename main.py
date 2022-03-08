@@ -5,6 +5,7 @@ import time
 import datetime
 
 import psycopg2
+import config from config
 
 x = 1
 d = 1
@@ -25,13 +26,9 @@ for j in range (1000):
     headings_list = headings_list[:6]
     
     while d == 1:
-      ###############################################################connect to database
-      conn = psycopg2.connect("dbname=ddt3jth60iul84, user=lmhhwkksgpwqbs,\ 
-                              password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d, host=ec2-54-157-160-218.compute-1.amazonaws.com, port=5432")
-      dbt = CREATE TABLE coin(now,headings_list) #invalid syntax
+      ###############################################################connect to database and create table
+      create_table.run()
       d += 1
-      ##########################################################################close database
-      conn.close()
       ##########################################################################
   
     data = []
