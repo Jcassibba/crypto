@@ -4,20 +4,6 @@ from bs4 import BeautifulSoup
 import time 
 import datetime
 
-def create_db_connection(ec2-54-157-160-218.compute-1.amazonaws.com, lmhhwkksgpwqbs, bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d, ddt3jth60iul84):
-    connection = None
-    try:
-        connection = mysql.connector.connect(
-            host=host_name,
-            user=user_name,
-            passwd=user_password,
-            database=db_name
-        )
-        print("Database connection successful")
-    except Error as err:
-        print(f"Error: '{err}'")
-
-    return connection
 
 x=1
 
