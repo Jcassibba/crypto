@@ -6,11 +6,11 @@ import datetime
 
 import psycopg2
 
-x=1
-d=1
+x = 1
+d = 1
 
 for j in range (1000):
-  while x==1:
+  while x == 1:
     #crypto = open("crypto.json", "a")
     now = datetime.datetime.now()
         
@@ -24,11 +24,11 @@ for j in range (1000):
       headings_list.append(x.text)
     headings_list = headings_list[:6]
     
-    while d==1:
+    while d == 1:
       ###############################################################connect to database
-      conn=psycopg2.connect("databasename=ddt3jth60iul84 user=lmhhwkksgpwqbs password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d")
-      CREATE TABLE coin(headings_list)
-      d +=1
+      conn = psycopg2.connect("databasename=ddt3jth60iul84 user=lmhhwkksgpwqbs password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d, host=?, port=?")
+      dbt = CREATE TABLE COIN(headings_list)
+      d += 1
       ##########################################################################close database
       conn.close()
       ##########################################################################
@@ -48,9 +48,9 @@ for j in range (1000):
       d = str(coin)
       n = str(now)
       #################################################################### connect to data base
-      conn=psycopg2.connect("databasename=ddt3jth60iul84 user=lmhhwkksgpwqbs password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d")
+      conn=psycopg2.connect("databasename=ddt3jth60iul84, user=lmhhwkksgpwqbs, password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d, host=?, port=?")
       #################################################################### add values to table
-      db= INSERT INTO coin_table(heading_list) VALUES (n,d)
+      db = INSERT INTO dbt(heading_list) VALUES (n,d)
       conn.cursor.execute(db)
       ######crypto.write(n) [remove]
       ######crypto.write(d) [remove]
