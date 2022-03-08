@@ -27,7 +27,7 @@ for j in range (1000):
     while d == 1:
       ###############################################################connect to database
       conn = psycopg2.connect("databasename=ddt3jth60iul84 user=lmhhwkksgpwqbs password=bfc5d49a5575e869e5a39f3cc9d9bc79585a283dfa5189b6fa37a0d30ed6e11d, host=ec2-54-157-160-218.compute-1.amazonaws.com, port=5432")
-      dbt = CREATE TABLE COIN(headings_list)
+      dbt = CREATE TABLE coin(headings_list) #invalid syntax
       d += 1
       ##########################################################################close database
       conn.close()
