@@ -5,7 +5,7 @@ import time
 import datetime
 
 import psycopg2
-import config from config
+
 
 x = 1
 d = 1
