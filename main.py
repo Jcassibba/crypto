@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import time 
 import datetime
 
-import psycopg2
+#import psycopg2
 
 
 x = 1
