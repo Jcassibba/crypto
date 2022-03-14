@@ -57,7 +57,7 @@ for j in range (1000):
       #conn.commit()
       #conn.close()
       ##########################################################################
-      print(now+""+coin)
+      print(n+""+d)
       print('')
     #crypto.close() [remove]
   time.sleep(10)   #(3600)
