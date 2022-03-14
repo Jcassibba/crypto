@@ -2,7 +2,7 @@ import psycopg2
 from config import config
   
   
-def create_tables():
+def create_tables():  #broken
    
     commands = CREATE TABLE coin (now, heading_listing) #invalid syntax
     # connect to the PostgreSQL server
@@ -19,4 +19,4 @@ def create_tables():
         conn.close()
 
 if __name__ == '__main__':
-    create_tables()
+    create_tables.run()
