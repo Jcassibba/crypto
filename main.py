@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import time 
 import datetime
 from create_table import create_tables
-#import psycopg2
+import psycopg2
 
 
 x = 1
@@ -60,6 +60,6 @@ for j in range (1000):
       print(coin)
       print('')
     #crypto.close() [remove]
-  time.sleep(10)
+  time.sleep(20)
   x=1
 #################################
