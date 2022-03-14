@@ -12,7 +12,7 @@ d = 1
 
 for j in range (1000):
   while x == 1:
-    #crypto = open("crypto.json", "a")
+    crypto = open("crypto.json", "a")
     now = datetime.datetime.now()
         
     url = 'https://coinmarketcap.com/'
@@ -41,7 +41,9 @@ for j in range (1000):
       for i in range(6):
         dict[headings_list[i]] = column_value[i].text
       data.append(dict)
-          
+    
+    crypto.write(data)
+    
     for coin in data: 
       d = str(coin)
       n = str(now)
@@ -50,8 +52,9 @@ for j in range (1000):
       #################################################################### add values to table (broken)
       #db = INSERT INTO coin (now, heading_list) VALUES (n, d) #invalid syntax
       #conn.cursor.execute(db)
-      ######crypto.write(n) [remove]
-      ######crypto.write(d) [remove]
+      ##############################################################################
+      crypto.write(n) [remove]
+      crypto.write(d) [remove]
       ##########################################################################close database
       #cursor.close()
       #conn.commit()
@@ -59,7 +62,7 @@ for j in range (1000):
       ##########################################################################
       print(n+""+d)
       print('')
-    #crypto.close() [remove]
+    crypto.close() [remove]
   time.sleep(10)   #(3600)
   x=1
 #################################
