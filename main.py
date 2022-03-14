@@ -3,8 +3,8 @@ import requests
 from bs4 import BeautifulSoup
 import time 
 import datetime
-from create_table import create_tables
-import psycopg2
+#from create_table import create_tables
+#import psycopg2
 
 
 x = 1
